@@ -1,4 +1,8 @@
 -- LSP Plugins
+-- https://github.com/folke/lazydev.nvim
+-- https://github.com/neovim/nvim-lspconfig
+-- https://github.com/williamboman/mason.nvim
+
 return {
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -236,4 +240,5 @@ return {
     end,
   },
 }
+
 -- vim: ts=2 sts=2 sw=2 et

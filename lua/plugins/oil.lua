@@ -12,3 +12,5 @@ return {
     -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
   },
 }
+
+-- vim: ts=2 sts=2 sw=2 et
