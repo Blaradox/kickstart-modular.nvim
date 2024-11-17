@@ -24,7 +24,7 @@ return {
       { 'nvim-telescope/telescope-ui-select.nvim' },
 
       -- Useful for getting pretty icons, but requires a Nerd Font.
-      { 'echasnovski/mini.icons', enabled = vim.g.have_nerd_font },
+      { 'echasnovski/mini.icons', lazy = true, enabled = vim.g.have_nerd_font },
     },
     config = function()
       -- Two important keymaps to use while in Telescope are:
@@ -35,7 +35,7 @@ return {
       -- Telescope picker.
 
       -- [[ Configure Telescope ]]
-      -- See `:help telescope` and `:help telescope.setup()`
+      --  See `:help telescope` and `:help telescope.setup()`
       require('telescope').setup {
         pickers = {
           find_files = {

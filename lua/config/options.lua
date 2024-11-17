@@ -1,6 +1,6 @@
 -- [[ Setting options ]]
--- See `:help vim.opt`
--- For more options, you can see `:help option-list`
+--  See `:help vim.opt`
+--  For more options, you can see `:help option-list`
 
 -- Make line numbers default
 vim.opt.number = true

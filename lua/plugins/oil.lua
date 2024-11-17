@@ -2,14 +2,15 @@
 -- https://github.com/stevearc/oil.nvim
 
 return {
-  {
+  { -- Replace netrw to navigate/add/rm files
     'stevearc/oil.nvim',
     ---@module 'oil'
     ---@type oil.SetupOpts
     opts = {},
     -- Optional dependencies
-    dependencies = { { 'echasnovski/mini.icons', opts = {} } },
-    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+    dependencies = {
+      { 'echasnovski/mini.icons', lazy = true, enabled = vim.g.have_nerd_font },
+    },
   },
 }
 

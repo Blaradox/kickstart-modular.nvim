@@ -2,7 +2,7 @@
 -- https://github.com/catppuccin/nvim
 
 return {
-  {
+  { -- Colorscheme
     'https://github.com/catppuccin/nvim',
     config = function()
       require('catppuccin').setup {

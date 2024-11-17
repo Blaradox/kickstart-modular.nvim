@@ -2,7 +2,7 @@
 -- https://github.com/tpope/vim-sleuth
 -- https://github.com/tpope/vim-unimpaired
 
-return {
+return { -- Collection of vim plugins by the pope himself
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
   -- Complementary pairs of mappings
