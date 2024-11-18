@@ -7,17 +7,11 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
--- [[ Setting options ]]
-require 'config.options'
-
--- [[ Basic Keymaps ]]
-require 'config.keymaps'
-
--- [[ Basic Autocommands ]]
-require 'config.autocommands'
-
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'config.lazy'
+
+--  NOTE: Options, Keymaps, Autocommands etc. are set in the 'plugin' folder.
+--  See `:help 'runtimepath'` and `:scriptnames`
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
