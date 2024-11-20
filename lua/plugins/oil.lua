@@ -6,10 +6,21 @@ return {
     'stevearc/oil.nvim',
     ---@module 'oil'
     ---@type oil.SetupOpts
-    opts = {},
+    opts = {
+      columns = { 'icon' },
+      view_options = {
+        show_hidden = true,
+      },
+    },
+    init = function()
+      -- Open parent directory in current window
+      vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+      -- Open parent directory in floating window
+      vim.keymap.set('n', '<leader>-', require('oil').toggle_float, { desc = 'Open parent directory in float' })
+    end,
     -- Optional dependencies
     dependencies = {
-      { 'echasnovski/mini.icons', lazy = true, enabled = vim.g.have_nerd_font },
+      { 'nvim-tree/nvim-web-devicons', lazy = true, enabled = vim.g.have_nerd_font },
     },
   },
 }
