@@ -11,6 +11,11 @@ return {
       view_options = {
         show_hidden = true,
       },
+      keymaps = {
+        -- unmap bindings that overlap with window navigation
+        ['<C-h>'] = false,
+        ['<C-l>'] = false,
+      },
     },
     init = function()
       -- Open parent directory in current window
