@@ -4,7 +4,9 @@
 -- Use system clipboard with leader key
 --  See `:help clipboard` and `:help quoteplus`
 vim.keymap.set('n', '<leader>y', '"+y')
+vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>p', '"+p')
+vim.keymap.set('v', '<leader>p', '"+p')
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
